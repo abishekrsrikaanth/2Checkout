@@ -1,0 +1,20 @@
+{
+  "name": "abishekrsrikaanth/2checkout",
+  "description": "PHP SDK to integrate with 2Checkout Payment Gateway",
+  "require": {
+    "guzzlehttp/guzzle": "6.0"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Abishek R Srikaanth",
+      "email": "abishek@technicaliti.me"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Abishekrsrikaanth\\TwoCheckout\\": "src"
+    }
+  },
+  "minimum-stability": "stable"
+}
