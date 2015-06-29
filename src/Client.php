@@ -10,13 +10,14 @@ class Client
     private $_sale;
     private $_admin;
 
-    public function __construct($sellerId, $privateKey, $userName, $password, $environment = "LIVE")
+    public function getSaleInstance($sellerId, $privateKey, $sandbox = false)
     {
-        $this->_sale = new Sale($sellerId, $privateKey, $environment);
+        $this->_sale = new Sale($sellerId, $privateKey, $sandbox);
+        return $this->_sale;
     }
 
-    public function getSaleInstance()
+    public function getAdminInstance($userName, $password, $environment = "LIVE")
     {
-        return $this->_sale;
+
     }
 }
